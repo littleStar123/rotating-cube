@@ -1,0 +1,132 @@
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	perspective: 1920px;
+	overflow: hidden;
+}
+.content{
+	width: 200px;
+	height: 200px;
+	animation: rt 3s infinite linear;
+	position: relative;
+	left: 200px;
+	top:200px;
+	transform-style: preserve-3d;
+}
+.content>div{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	transform-style: preserve-3d;
+}
+.cube {
+	//left:e("calc(50% - 100px)");
+	//top: calc(50% - 100px);
+	transform: translateZ(75px);
+}
+.cube2 {
+	transform: translateZ(-75px);
+}
+.cube3{
+	transform: translateX(-75px)rotateY(90deg);
+}
+.cube4{
+	transform: translateX(75px)rotateY(90deg);
+}
+@keyframes rt {
+	to {
+		transform: rotateY(360deg) rotateZ(360deg);
+	}
+}
+.creatediv(@width:200px,@height:200px,@color:#cf90ee) {
+	width: @width;
+	height: @height;
+	opacity: 0.8;
+	position: absolute;
+	background-color:@color ;
+	//background: url("bg.png");
+	position: absolute;
+}
+//前
+.div1{
+	.creatediv(50px,150px);
+	transform: translateZ(25px);
+}
+.div2{
+	.creatediv(150px,50px);
+	left: 50px;
+	transform: translateZ(25px);
+}
+.div3{
+	.creatediv(50px,150px);
+	top:50px;
+	left: 150px;
+	transform: translateZ(25px);
+}
+.div4{
+	.creatediv(150px,50px);
+	top:150px;
+	transform: translateZ(25px);
+}
+//后
+.div5{
+	.creatediv(50px,150px);
+	transform: translateZ(-25px);
+}
+.div6{
+	.creatediv(150px,50px);
+	left: 50px;
+	transform: translateZ(-25px);
+}
+.div7{
+	.creatediv(50px,150px);
+	top:50px;
+	left: 150px;
+	transform: translateZ(-25px);
+}
+.div8{
+	.creatediv(150px,50px);
+	top:150px;
+	transform: translateZ(-25px);
+}
+//内
+.div9{
+	.creatediv(50px,100px);
+	transform:translateX(25px)translateY(50px) rotateY(-90deg);
+}
+.div10{
+	.creatediv(100px,50px);
+	transform:translateY(25px)translateX(50px) rotateX(-90deg);
+}
+.div11{
+	.creatediv(50px,100px);
+	transform: translateY(50px)translateX(125px)rotateY(-90deg);
+}
+.div12{
+	.creatediv(100px,50px);
+	transform: translateY(125px)translateX(50px) rotateX(-90deg);
+}
+//外
+.div13{
+	.creatediv(50px,200px);
+	transform: translateX(-25px) rotateY(-90deg);
+}
+.div14{
+	.creatediv(200px,50px);
+	transform: translateY(-25px) rotateX(-90deg);
+}
+.div15{
+	.creatediv(50px,200px);
+	transform: translateX(175px) rotateY(-90deg);
+}
+.div16{
+	.creatediv(200px,50px);
+	transform: translateY(175px) rotateX(-90deg);
+}
+div{
+	width: 1000px;
+	height: 1000px;
+}

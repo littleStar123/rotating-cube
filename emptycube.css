@@ -1,0 +1,181 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  perspective: 1920px;
+  overflow: hidden;
+}
+.content {
+  width: 200px;
+  height: 200px;
+  animation: rt 3s infinite linear;
+  position: relative;
+  left: 200px;
+  top: 200px;
+  transform-style: preserve-3d;
+}
+.content > div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.cube {
+  transform: translateZ(75px);
+}
+.cube2 {
+  transform: translateZ(-75px);
+}
+.cube3 {
+  transform: translateX(-75px) rotateY(90deg);
+}
+.cube4 {
+  transform: translateX(75px) rotateY(90deg);
+}
+@keyframes rt {
+  to {
+    transform: rotateY(360deg) rotateZ(360deg);
+  }
+}
+.div1 {
+  width: 50px;
+  height: 150px;
+  opacity: 0.8;
+  background-color: #cf90ee;
+  position: absolute;
+  transform: translateZ(25px);
+}
+.div2 {
+  width: 150px;
+  height: 50px;
+  opacity: 0.8;
+  background-color: #cf90ee;
+  position: absolute;
+  left: 50px;
+  transform: translateZ(25px);
+}
+.div3 {
+  width: 50px;
+  height: 150px;
+  opacity: 0.8;
+  background-color: #cf90ee;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  transform: translateZ(25px);
+}
+.div4 {
+  width: 150px;
+  height: 50px;
+  opacity: 0.8;
+  background-color: #cf90ee;
+  position: absolute;
+  top: 150px;
+  transform: translateZ(25px);
+}
+.div5 {
+  width: 50px;
+  height: 150px;
+  opacity: 0.8;
+  background-color: #cf90ee;
+  position: absolute;
+  transform: translateZ(-25px);
+}
+.div6 {
+  width: 150px;
+  height: 50px;
+  opacity: 0.8;
+  background-color: #cf90ee;
+  position: absolute;
+  left: 50px;
+  transform: translateZ(-25px);
+}
+.div7 {
+  width: 50px;
+  height: 150px;
+  opacity: 0.8;
+  background-color: #cf90ee;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  transform: translateZ(-25px);
+}
+.div8 {
+  width: 150px;
+  height: 50px;
+  opacity: 0.8;
+  background-color: #cf90ee;
+  position: absolute;
+  top: 150px;
+  transform: translateZ(-25px);
+}
+.div9 {
+  width: 50px;
+  height: 100px;
+  opacity: 0.8;
+  background-color: #cf90ee;
+  position: absolute;
+  transform: translateX(25px) translateY(50px) rotateY(-90deg);
+}
+.div10 {
+  width: 100px;
+  height: 50px;
+  opacity: 0.8;
+  background-color: #cf90ee;
+  position: absolute;
+  transform: translateY(25px) translateX(50px) rotateX(-90deg);
+}
+.div11 {
+  width: 50px;
+  height: 100px;
+  opacity: 0.8;
+  background-color: #cf90ee;
+  position: absolute;
+  transform: translateY(50px) translateX(125px) rotateY(-90deg);
+}
+.div12 {
+  width: 100px;
+  height: 50px;
+  opacity: 0.8;
+  background-color: #cf90ee;
+  position: absolute;
+  transform: translateY(125px) translateX(50px) rotateX(-90deg);
+}
+.div13 {
+  width: 50px;
+  height: 200px;
+  opacity: 0.8;
+  background-color: #cf90ee;
+  position: absolute;
+  transform: translateX(-25px) rotateY(-90deg);
+}
+.div14 {
+  width: 200px;
+  height: 50px;
+  opacity: 0.8;
+  background-color: #cf90ee;
+  position: absolute;
+  transform: translateY(-25px) rotateX(-90deg);
+}
+.div15 {
+  width: 50px;
+  height: 200px;
+  opacity: 0.8;
+  background-color: #cf90ee;
+  position: absolute;
+  transform: translateX(175px) rotateY(-90deg);
+}
+.div16 {
+  width: 200px;
+  height: 50px;
+  opacity: 0.8;
+  background-color: #cf90ee;
+  position: absolute;
+  transform: translateY(175px) rotateX(-90deg);
+}
+div {
+  width: 1000px;
+  height: 1000px;
+}
